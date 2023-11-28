@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minha Empresa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--BARRA DE NAVAGAÇÃO-->
+  <nav class="navbar navbar-expand-lg sticky-top bg-light position-fixed w-100 shadow-sm">
+      <div class="container-fluid px-4">
+          <div class="d-flex align-items-center">
+              <a class="navbar-brand" href="#">Logo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#conteudonavegacao" aria-controls="conteudonavegacao" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+          <div class="collapse navbar-collapse" id="conteudonavegacao">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#sobre">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#servicos">Serviços</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#pacotes">Pacotes</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contato">Contato</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!--CARROSSEL-->
+  <div id="carouselAutoPlay" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselAutoPlay" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselAutoPlay" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselAutoPlay" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+          <div class="carousel-item active h-100">
+              <img src="imagens/imagem1.jpg" class="d-block w-100 vh-100 img-fluid" alt="imagem1">
+              <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                  <h1>Férias baratas</h1>
+                  <p class="fs-4">from <strong>R$ 105,00 por pessoa</strong></p>
+                  <div>
+                      <button type="button" class="btn btn-info btn-lg text-white">Leia mais</button>
+                  </div>
+              </div>
+          </div>
+
+          <div class="carousel-item h-100">
+              <img src="imagens/imagem2.jpg" class="d-block w-100 vh-100 img-fluid" alt="imagem2">
+              <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                  <h1 >Férias deslumbrantes</h1>
+                  <p class="fs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Alias architecto exercitationem fugiat mollitia quas qui sequi tenetur veniam!
+                      Asperiores blanditiis eligendi eum ipsa laborum recusandae tempore, ut vero. Ab, similique?</p>
+                  <div>
+                      <button type="button" class="btn btn-info btn-lg text-white">Leia mais</button>
+                  </div>
+              </div>
+          </div>
+
+          <div class="carousel-item h-100">
+              <img src="imagens/imagem3.jpg" class="d-block w-100 vh-100 img-fluid" alt="imagem3">
+              <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                  <h1 >Você merece um bom feriado</h1>
+                  <p class="fs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Aliquid amet delectus expedita fuga hic iste laudantium,
+                      libero magnam magni nesciunt nulla numquam quas rerum saepe unde ut vel voluptates voluptatum.</p>
+                  <div>
+                      <button type="button" class="btn btn-info btn-lg text-white">Leia mais</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoPlay" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoPlay" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+      </button>
+
+  </div>
+
+  <!--SOBRE-->
+  <div class="container" id="sobre">
+      <div class="rol m-0">
+          <div class="col-12 p-5">
+              <h2 class="fs-1 text-center">Oferecemos as férias mais baratas sempre</h2>
+              <p class="fs-5 py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Alias consequuntur delectus dicta eaque esse est impedit nostrum quae quo saepe? Accusamus corporis doloribus obcaecati.
+                  A, ab amet at aut blanditiis deleniti ea earum hic labore laboriosam minus modi neque non odit officia omnis optio placeat qui quibusdam
+                  quis ratione reiciendis rem repellat rerum sed tempora veniam vitae.
+                  Aperiam cum cupiditate eos facere incidunt ipsam ipsum libero molestias mollitia nesciunt nihil nobis odio optio pariatur perferendis
+                  porro provident quae quaerat quam qui quidem quisquam recusandae reiciendis rem saepe sequi sit temporibus tenetur ut, voluptates?
+                  Ad corporis eaque, labore obcaecati praesentium sequi!</p>
+              <div class="text-center">
+                  <button type="button" class="btn btn-info btn-lg text-white">Leia mais</button>
+              </div>
+          </div>
+
+      </div>
+  </div>
+
+   <!--SERVIÇOS-->
+  <div class="bg-dark text-light py-5" id="servicos">
+      <div class="container">
+          <h2 class="text-capitalize text-center fs-1">Nossos Serviços</h2>
+          <p class="text-center py-3 w-50 m-auto">
+              lorem ipsum dolor sit amet, consectetur adipisicing elit. lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <div class="row g-4 py-5">
+              <div class="col-lg-4 mb-3 mb-sm-0">
+                  <div class="card shadow text-dark">
+                      <div class="card-body text-center p-4">
+                          <h5 class="card-title">Serviço 1</h5>
+                          <p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                              ssumenda earum eum pariatur quae. Consequuntur doloribus facilis fuga fugit impedit itaque nesciunt,
+                              perferendis placeat porro provident quam qui sit sunt vel!</p>
+                          <a href="#" class="btn btn-info shadow"> Mais informações</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="card shadow text-dark">
+                      <div class="card-body text-center p-4">
+                          <h5 class="card-title">Serviço 2</h5>
+                          <p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                              ssumenda earum eum pariatur quae. Consequuntur doloribus facilis fuga fugit impedit itaque nesciunt,
+                              perferendis placeat porro provident quam qui sit sunt vel!</p>
+                          <a href="#" class="btn btn-info shadow"> Mais informações</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="card shadow text-dark">
+                      <div class="card-body text-center p-4">
+                          <h5 class="card-title">Serviço 3</h5>
+                          <p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                              ssumenda earum eum pariatur quae. Consequuntur doloribus facilis fuga fugit impedit itaque nesciunt,
+                              perferendis placeat porro provident quam qui sit sunt vel!</p>
+                          <a href="#" class="btn btn-info shadow"> Mais informações</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="bg-info text-light py-5">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 mb-3 bm-sm-0">
+                      <h2 class="">Assine nossa newsletter</h2>
+                  </div>
+                  <div class="col-lg-6 mb-3 mb-sm-0">
+                      <form>
+                          <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="Digite seu e-mail"
+                                     aria-label="E-mail do destinatário" aria-describedby="button-addon2">
+                              <button type="button" id="button-addon2" class="btn btn-dark">Inscrever-se</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="py-5" id="pacotes">
+          <div class="container">
+              <h2 class="text-capitalize text-center fs-1">Nossos Pacotes</h2>
+              <p class="text-center py-3 w-50 m-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab explicabo hic inventore ipsa iste,
+                  iusto laborum maiores mollitia placeat vero. A aliquam aperiam, eos fugiat harum labore sed soluta tempore!</p>
+              <div class="row g-4-py-5">
+                  <div class="col-lg-4 mb-3 mb-sm-0">
+                      <div class="card shadow">
+                          <img src="imagens/imagem5.jpg" alt="imagem" class="card-img-top">
+                          <div class="card-body p-4">
+                              <h5 class="card-title">Pacote 1</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                  Error, magni, praesentium. Accusantium adipisci alias deleniti deserunt
+                                  doloribus esse facere nam, natus necessitatibus neque odio placeat quae quaerat quis,
+                                  repellat repellendus.</p>
+                              <a href="#" class="btn btn-info">Mais Informações</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                      <div class="card shadow">
+                          <img src="imagens/imagem6.jpg" alt="imagem" class="card-img-top">
+                          <div class="card-body p-4">
+                              <h5 class="card-title">Pacote 2</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                  Error, magni, praesentium. Accusantium adipisci alias deleniti deserunt
+                                  doloribus esse facere nam, natus necessitatibus neque odio placeat quae quaerat quis,
+                                  repellat repellendus.</p>
+                              <a href="#" class="btn btn-info">Mais Informações</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                      <div class="card shadow">
+                          <img src="imagens/imagem7.jpg" alt="imagem" class="card-img-top">
+                          <div class="card-body p-4">
+                              <h5 class="card-title">Pacote 3</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                  Error, magni, praesentium. Accusantium adipisci alias deleniti deserunt
+                                  doloribus esse facere nam, natus necessitatibus neque odio placeat quae quaerat quis,
+                                  repellat repellendus.</p>
+                              <a href="#" class="btn btn-info">Mais Informações</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="bg-dark text-light py-5">
+          <div class="container">
+              <h2 class="text-center fs-1 mb-5">Perguntas frequentes</h2>
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                 data-bs-target="#collapseOne"
+                                 aria-expanded="true" aria-controls="collapseOne">Dúvida 1</button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium architecto, debitis dolorem error esse et exercitationem expedita,
+                                  fugiat incidunt ipsa itaque laborum obcaecati officia porro quae quis quo rem saepe, sed sequi vitae voluptatem?
+                                  Deserunt eaque eos fugiat impedit minus nemo nostrum sit! Accusantium, animi architecto aspernatur cupiditate eum ex impedit incidunt iusto
+                                  natus nemo nostrum nulla quae! Inventore, temporibus, voluptate. Ab dignissimos dolore eligendi incidunt, maiores odit officia quidem recusandae.
+                                  A, adipisci aliquam aliquid aut cumque delectus doloribus ducimus eius eos est harum ipsa iste iusto laboriosam modi nobis numquam odit officia omnis,
+                                  perferendis quae quas ratione repellat reprehenderit similique sint temporibus voluptatum.
+                                  Doloremque pariatur, quod! Consequuntur eius maiores neque nisi. Alias at autem ducimus eius, eos eum hic id possimus quae vero.
+                                  Accusantium cupiditate dolores doloribus eaque eius eveniet exercitationem fugit iste iure molestiae?
+                                  Animi aperiam atque ipsa iusto voluptates? Ab adipisci aperiam, aut culpa deleniti deserunt dolores doloribus ex facilis fugit illum ipsa
+                                  magnam modi obcaecati officia perferendis praesentium provident quas quia quibusdam quidem reprehenderit
+                                  sapiente tempora totam ut, veniam vitae voluptatum! Amet ex molestias possimus sequi veritatis! Aliquam aspernatur commodi cum delectus dolor
+                                  dolorem ducimus eaque enim facere fugiat hic iste magni minus molestias nobis numquam obcaecati quo reiciendis rem repellendus,
+                                  reprehenderit rerum soluta suscipit tempora ut voluptas voluptate. Amet autem eos provident voluptatem. Laborum modi quos voluptatibus?
+                                  Aspernatur assumenda at atque autem beatae consectetur distinctio doloribus eos eveniet impedit,
+                                  in incidunt inventore ipsam ipsum iste maiores minima natus necessitatibus nobis quae quasi quod recusandae sit temporibus ut veniam voluptate?
+                                  Ab autem commodi consectetur deleniti dolorum eveniet exercitationem facere harum ipsum iste laboriosam laudantium neque nisi nostrum,
+                                  officia omnis quae quibusdam ratione recusandae similique ullam vel velit voluptates! Asperiores autem cumque dignissimos dolores doloribus error esse harum,
+                                  maiores maxime odit officiis provident quaerat ratione totam vel vitae voluptas. Aliquid aut autem debitis dolorum eligendi enim excepturi hic ipsa maxime nam non,
+                                  omnis ratione rem rerum similique unde, velit voluptas. Ad fugiat id in? Deleniti dolor incidunt placeat voluptate voluptatem?
+                                  Architecto consectetur corporis dolor eos esse itaque, obcaecati repellat reprehenderit? Eum, soluta tempore. </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseTwo"
+                                  aria-expanded="false" aria-controls="collapseTwo">Dúvida 2</button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                           data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                  Dolores, eaque eveniet ex laudantium maxime minus pariatur provident quisquam quod!
+                                  Consectetur dignissimos illo porro.
+                                  Architecto asperiores dolorem enim necessitatibus odio omnis.</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseThree"
+                                  aria-expanded="false" aria-controls="collapseThree">Dúvida 3</button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                           data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium architecto, debitis dolorem error esse et exercitationem expedita,
+                                  fugiat incidunt ipsa itaque laborum obcaecati officia porro quae quis quo rem saepe, sed sequi vitae voluptatem?
+                                  Deserunt eaque eos fugiat impedit minus nemo nostrum sit! Accusantium, animi architecto aspernatur cupiditate eum ex impedit incidunt iusto
+                                  natus nemo nostrum nulla quae! Inventore, temporibus, voluptate. Ab dignissimos dolore eligendi incidunt, maiores odit officia quidem recusandae.
+                                  A, adipisci aliquam aliquid aut cumque delectus doloribus ducimus eius eos est harum ipsa iste iusto laboriosam modi nobis numquam odit officia omnis,
+                                  perferendis quae quas ratione repellat reprehenderit similique sint temporibus voluptatum.
+                                  Doloremque pariatur, quod! Consequuntur eius maiores neque nisi. Alias at autem ducimus eius, eos eum hic id possimus quae vero.
+                                  Accusantium cupiditate dolores doloribus eaque eius eveniet exercitationem fugit iste iure molestiae?
+                                  Animi aperiam atque ipsa iusto voluptates? Ab adipisci aperiam, aut culpa deleniti deserunt dolores doloribus ex facilis fugit illum ipsa
+                                  magnam modi obcaecati officia perferendis praesentium provident quas quia quibusdam quidem reprehenderit
+                                  sapiente tempora totam ut, veniam vitae voluptatum! Amet ex molestias possimus sequi veritatis! Aliquam aspernatur commodi cum delectus dolor
+                                  dolorem ducimus eaque enim facere fugiat hic iste magni minus molestias nobis numquam obcaecati quo reiciendis rem repellendus,
+                                  reprehenderit rerum soluta suscipit tempora ut voluptas voluptate. Amet autem eos provident voluptatem. Laborum modi quos voluptatibus?
+                                  Aspernatur assumenda at atque autem beatae consectetur distinctio doloribus eos eveniet impedit,
+                                  in incidunt inventore ipsam ipsum iste maiores minima natus necessitatibus nobis quae quasi quod recusandae sit temporibus ut veniam voluptate?
+                                  Ab autem commodi consectetur deleniti dolorum eveniet exercitationem facere harum ipsum iste laboriosam laudantium neque nisi nostrum,
+                                  officia omnis quae quibusdam ratione recusandae similique ullam vel velit voluptates! Asperiores autem cumque dignissimos dolores doloribus error esse harum,
+                                  maiores maxime odit officiis provident quaerat ratione totam vel vitae voluptas. Aliquid aut autem debitis dolorum eligendi enim excepturi hic ipsa maxime nam non,
+                                  omnis ratione rem rerum similique unde, velit voluptas. Ad fugiat id in? Deleniti dolor incidunt placeat voluptate voluptatem?
+                                  Architecto consectetur corporis dolor eos esse itaque, obcaecati repellat reprehenderit? Eum, soluta tempore.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+  <!--EQUIPE-->
+  <div class="py-5" id="equipe">
+      <div class="container">
+          <h2 class="text-captilize text-center fs-1 mb-5">Equipe</h2>
+          <p class="w-50 m-auto text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aliquam, blanditiis incidunt labore magni quos repellat ut veniam.
+              Atque dicta dolor enim ipsum itaque iusto libero, neque nisi possimus, sunt vel!
+          </p>
+          <div class="row g-4 py-5">
+              <div class="col-lg-4 mb-3 mb-sm-0">
+                  <div class="card shadow text-center bg-dark text-light">
+                      <img src="imagens/funcionario1.jpg" alt="imagem" class="rounded-circle m-5">
+                      <div class="card-body p-4">
+                          <h5 class="card-title">Ana Maria</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          <a href="#" class="mx-2 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg></a>
+
+                          <a href="#" class="mx-2 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                              </svg></a>
+
+                          <a href="#" class="mx-2 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                              </svg></a>
+
+                          <a href="#" class="mx-2 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                              </svg></a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-4">
+                  <div class="card shadow text-center bg-dark text-light">
+                      <img src="imagens/funcionario2.jpg" alt="imagem" class="rounded-circle m-5">
+                      <div class="card-body p-4">
+                          <h5 class="card-title">Débora</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          <a href="#" class="mx-2 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg></a>
+
+                          <a href="#" class="mx-2 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                          </svg></a>
+
+                          <a href="#" class="mx-2 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg></a>
+
+                          <a href="#" class="mx-2 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg></a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-4">
+                  <div class="card shadow text-center bg-dark text-light">
+                      <img src="imagens/funcionario3.jpg" alt="imagem" class="rounded-circle m-5">
+                      <div class="card-body p-4">
+                          <h5 class="card-title">João</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          <a href="#" class="mx-2 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg></a>
+
+                          <a href="#" class="mx-2 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                          </svg></a>
+
+                          <a href="#" class="mx-2 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg></a>
+
+                          <a href="#" class="mx-2 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!--CONTATO-->
+  <div class="bg-light py-5" id="contato">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <h2 class="fs-1 text-capitalize text-center">Contato</h2>
+                  <p class="fs-4 text-center"><strong>Telefone:</strong> (035) 9 9999-9999</p>
+                  <p class="fs-4 text-center"><strong>Email:</strong> meuemail@gmail.com</p>
+                  <p class="fs-4 text-center"><strong>Endereço:</strong> Rua tal, nº 10 - Bairro Jardins</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    <!--RODAPÉ-->
+  <footer>
+      <div class="py-3">
+          <p class="text-center mb-0">
+              Copyrigth &copy; 2023 - Todos os direitos reservados
+          </p>
+      </div>
+  </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
